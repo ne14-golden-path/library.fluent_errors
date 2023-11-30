@@ -21,7 +21,6 @@ jobs:
       env:
         READ_REPO_PACKAGES: ${{ secrets.READ_REPO_PACKAGES }}
       run: |
-        cd ./source
         vversion=${{ github.ref_name }}
         dotnet nuget add source "https://nuget.pkg.github.com/ne14-golden-path/index.json" --name ne14-gp --username ne14-gp --password "${{ env.READ_REPO_PACKAGES }}" --store-password-in-clear-text
         dotnet pack -c Release -o ${{ runner.temp }}/nu -p:Version=${vversion:1}
