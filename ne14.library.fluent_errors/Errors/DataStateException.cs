@@ -2,7 +2,7 @@
 // Copyright (c) ne1410s. All rights reserved.
 // </copyright>
 
-namespace FluentErrors.Errors;
+namespace ne14.library.fluent_errors.Errors;
 
 /// <summary>
 /// Represents errors occuring due to the state of data in the store.

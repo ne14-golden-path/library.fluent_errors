@@ -2,7 +2,7 @@
 // Copyright (c) ne1410s. All rights reserved.
 // </copyright>
 
-namespace FluentErrors.Api.Models;
+namespace ne14.library.fluent_errors.Api.Models;
 
 /// <summary>
 /// An http error outcome.

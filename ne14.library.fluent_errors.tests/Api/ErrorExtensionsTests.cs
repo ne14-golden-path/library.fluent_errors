@@ -2,13 +2,13 @@
 // Copyright (c) ne1410s. All rights reserved.
 // </copyright>
 
-namespace FluentErrors.Tests.Api;
+namespace ne14.library.fluent_errors.tests.Api;
 
-using System.Runtime.Serialization;
-using FluentErrors.Api;
-using FluentErrors.Api.Models;
-using FluentErrors.Errors;
-using FluentErrors.Validation;
+using System.Runtime.CompilerServices;
+using ne14.library.fluent_errors.Api;
+using ne14.library.fluent_errors.Api.Models;
+using ne14.library.fluent_errors.Errors;
+using ne14.library.fluent_errors.Validation;
 
 public class ErrorExtensionsTests
 {
@@ -23,7 +23,7 @@ public class ErrorExtensionsTests
     public void ToErrorCode_VaryingException_ReturnsExpectedCode(Type errorType, int expected)
     {
         // Arrange
-        var ex = (Exception)FormatterServices.GetUninitializedObject(errorType);
+        var ex = (Exception)RuntimeHelpers.GetUninitializedObject(errorType);
 
         // Act
         var actual = ex.ToErrorCode();
@@ -36,7 +36,7 @@ public class ErrorExtensionsTests
     public void ToOutcome_GenericException_ConcealsOriginalMessage()
     {
         // Arrange
-        var ex = new Exception("secret corporate stuff");
+        var ex = new ArithmeticException("secret corporate stuff");
         var expectedBody = new HttpErrorBody(ex.GetType().Name, "An unexpected error occurred");
         var expected = new HttpErrorOutcome(500, expectedBody);
 

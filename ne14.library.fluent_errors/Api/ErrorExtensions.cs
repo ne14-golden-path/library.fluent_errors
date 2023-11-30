@@ -2,11 +2,11 @@
 // Copyright (c) ne1410s. All rights reserved.
 // </copyright>
 
-namespace FluentErrors.Api;
+namespace ne14.library.fluent_errors.Api;
 
 using System;
-using FluentErrors.Api.Models;
-using FluentErrors.Errors;
+using ne14.library.fluent_errors.Api.Models;
+using ne14.library.fluent_errors.Errors;
 
 /// <summary>
 /// Error handling extensions.

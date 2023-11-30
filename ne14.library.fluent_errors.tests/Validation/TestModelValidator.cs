@@ -2,9 +2,9 @@
 // Copyright (c) ne1410s. All rights reserved.
 // </copyright>
 
-namespace FluentErrors.Tests.Validation;
+namespace ne14.library.fluent_errors.tests.Validation;
 
-using FluentErrors.Validation;
+using ne14.library.fluent_errors.Validation;
 using FluentValidation;
 
 public class TestModelValidator : FluentValidatorBase<TestModel>

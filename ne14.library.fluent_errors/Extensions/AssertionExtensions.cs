@@ -2,13 +2,13 @@
 // Copyright (c) ne1410s. All rights reserved.
 // </copyright>
 
-namespace FluentErrors.Extensions;
+namespace ne14.library.fluent_errors.Extensions;
 
 using System;
 using System.Collections.Generic;
 using System.Text.Json;
-using FluentErrors.Errors;
-using FluentErrors.Validation;
+using ne14.library.fluent_errors.Errors;
+using ne14.library.fluent_errors.Validation;
 
 /// <summary>
 /// Provides fluent semantics for raising pre-emptive exception types.

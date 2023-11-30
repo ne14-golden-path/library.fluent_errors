@@ -2,9 +2,9 @@
 // Copyright (c) ne1410s. All rights reserved.
 // </copyright>
 
-namespace FluentErrors.Tests.Api;
+namespace ne14.library.fluent_errors.tests.Api;
 
-using FluentErrors.Api.Models;
+using ne14.library.fluent_errors.Api.Models;
 
 public class HttpErrorOutcomeTests
 {

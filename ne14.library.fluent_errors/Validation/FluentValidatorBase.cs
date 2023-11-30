@@ -2,7 +2,7 @@
 // Copyright (c) ne1410s. All rights reserved.
 // </copyright>
 
-namespace FluentErrors.Validation;
+namespace ne14.library.fluent_errors.Validation;
 
 using System.Linq;
 using FluentValidation;

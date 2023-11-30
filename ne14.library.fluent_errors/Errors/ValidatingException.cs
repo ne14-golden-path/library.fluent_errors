@@ -2,10 +2,10 @@
 // Copyright (c) ne1410s. All rights reserved.
 // </copyright>
 
-namespace FluentErrors.Errors;
+namespace ne14.library.fluent_errors.Errors;
 
 using System.Collections.Generic;
-using FluentErrors.Validation;
+using ne14.library.fluent_errors.Validation;
 
 /// <summary>
 /// Represents errors occuring during validation.

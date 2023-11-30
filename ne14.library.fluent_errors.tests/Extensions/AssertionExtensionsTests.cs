@@ -2,16 +2,16 @@
 // Copyright (c) ne1410s. All rights reserved.
 // </copyright>
 
-namespace FluentErrors.Tests.Extensions;
+namespace ne14.library.fluent_errors.tests.Extensions;
 
 using System.Globalization;
-using FluentErrors.Errors;
-using FluentErrors.Extensions;
-using FluentErrors.Tests.Validation;
-using FluentErrors.Validation;
+using ne14.library.fluent_errors.Errors;
+using ne14.library.fluent_errors.Extensions;
+using ne14.library.fluent_errors.tests.Validation;
+using ne14.library.fluent_errors.Validation;
 
 /// <summary>
-/// Tests for the <see cref="FluentErrors.Extensions.AssertionExtensions"/> class.
+/// Tests for the <see cref="ne14.library.fluent_errors.Extensions.AssertionExtensions"/> class.
 /// </summary>
 public class AssertionExtensionsTests
 {

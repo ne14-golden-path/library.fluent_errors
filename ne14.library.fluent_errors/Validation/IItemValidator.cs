@@ -2,9 +2,9 @@
 // Copyright (c) ne1410s. All rights reserved.
 // </copyright>
 
-namespace FluentErrors.Validation;
+namespace ne14.library.fluent_errors.Validation;
 
-using FluentErrors.Errors;
+using ne14.library.fluent_errors.Errors;
 
 /// <summary>
 /// Validates an item.

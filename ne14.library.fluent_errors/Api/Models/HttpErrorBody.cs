@@ -2,10 +2,10 @@
 // Copyright (c) ne1410s. All rights reserved.
 // </copyright>
 
-namespace FluentErrors.Api.Models;
+namespace ne14.library.fluent_errors.Api.Models;
 
 using System.Collections.Generic;
-using FluentErrors.Validation;
+using ne14.library.fluent_errors.Validation;
 
 /// <summary>
 /// Response returned from a unsuccessful http call.

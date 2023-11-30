@@ -2,10 +2,10 @@
 // Copyright (c) ne1410s. All rights reserved.
 // </copyright>
 
-namespace FluentErrors.Tests.Validation;
+namespace ne14.library.fluent_errors.tests.Validation;
 
-using FluentErrors.Errors;
-using FluentErrors.Validation;
+using ne14.library.fluent_errors.Errors;
+using ne14.library.fluent_errors.Validation;
 
 public class FluentValidatorTests
 {
