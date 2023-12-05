@@ -37,7 +37,7 @@ public static class AssertionExtensions
     /// <param name="unless">Exemption criteria.</param>
     /// <exception cref="DataStateException">Assertion failed.</exception>
     public static void MustBePopulated<T>(this T obj, string? message = null, Func<bool>? unless = null)
-        => obj.IsDefault().MustBe(false, message, unless);
+        => (obj == null || obj.IsDefault()).MustBe(false, message, unless);
 
     /// <summary>
     /// Asserts that a reference must be equivalent to another, by way of
@@ -120,7 +120,7 @@ public static class AssertionExtensions
     /// <exception cref="ResourceMissingException">Assertion failed.</exception>
     public static void MustExist<T>(this T obj, string? message = null, Func<bool>? unless = null)
     {
-        if (unless?.Invoke() != true && obj.IsDefault())
+        if (unless?.Invoke() != true && (obj == null || obj.IsDefault()))
         {
             throw new ResourceMissingException(message);
         }
@@ -164,8 +164,8 @@ public static class AssertionExtensions
     /// <typeparam name="T">The object type.</typeparam>
     /// <param name="obj">The object.</param>
     /// <returns>Whether the object is default.</returns>
-    private static bool IsDefault<T>(this T obj)
-        => EqualityComparer<T>.Default.Equals(obj, default!);
+    private static bool IsDefault<T>(this T? obj)
+        => obj == null || EqualityComparer<T?>.Default.Equals(obj, default);
 
     /// <summary>
     /// Compares resulting strings following default serialization.
