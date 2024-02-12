@@ -7,6 +7,7 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <IncludeSymbols>True</IncludeSymbols>
     <Nullable>enable</Nullable>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/ne14-golden-path/library.fluent_errors</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
