@@ -43,7 +43,7 @@ jobs:
       run: dotnet stryker -O ${{ github.workspace }}/drop
     - name: Drop artifact - reports
       if: success() || steps.check_coverage.outcome == 'failure' || steps.gen_mutation.outcome == 'failure'
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: reports
         path: ${{ github.workspace }}/drop/reports
