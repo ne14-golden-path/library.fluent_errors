@@ -22,13 +22,17 @@
   <ItemGroup>
     <None Include="../README.md" Pack="true" PackagePath="\" Visible="false" />
     <None Include="../LICENSE" Pack="true" PackagePath="\" Visible="false" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="../.fluentconfig" Pack="true" PackagePath="content" />
+    <None Include="ne14.library.fluent_errors.props" Pack="true" PackagePath="build" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.9.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
-    <PackageReference Include="ne14.library.standards" Version="1.0.5" />
+    <PackageReference Include="ne14.library.standards" Version="1.0.6" />
     <PackageReference Include="System.Text.Json" Version="8.0.1" />
   </ItemGroup>
 
